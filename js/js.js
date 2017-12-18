@@ -68,28 +68,26 @@ inputList.addEventListener("click", handleListClick);
 addGroupBtn.addEventListener("click", handleAddGroupBtnClick);
 inputAddValue.addEventListener('click', addTextAreaValue);
 
-// //task 2
-// //
-// const button2 = document.getElementById('button2');
-// const list_item = document.getElementById('list_item');
-// const input2 = document.getElementById('input2');
-//
-// list_item.addEventListener('click', (event) => {
-// const items = document.getElementsByClassName('items');
-//   const target = event.target;
-//   if (target.tagName === 'LI')
-//     target.classList.toggle('items_color');
-// });
-//
-// const createNewElements = () => {
-//   let item = document.createElement('li');
-//   if (input2.value !== '') {
-//     item.innerHTML = input2.value;
-//     list_item.appendChild(item);
-//     item.classList.toggle('items')
-//   } else {
-//     alert('Заполните пустые поля!');
-//   }
-// }
-//
-// button2.addEventListener('click', createNewElements);
+//task 2
+const button2 = document.getElementById('button2');
+const list_item = document.getElementById('list_item');
+const input2 = document.getElementById('input2');
+
+list_item.addEventListener('click', (event) => {
+const items = document.getElementsByClassName('items');
+const target = event.target;
+   if (target.tagName === 'LI')
+    target.classList.toggle('items_color');
+ });
+
+ const createNewElements = () => {
+  let item = document.createElement('li');
+   if (input2.value !== '') {
+     item.innerHTML = input2.value;
+     list_item.appendChild(item);
+     item.classList.toggle('items')
+   } else {
+     alert('Заполните пустые поля!');
+   }
+ }
+button2.addEventListener('click', createNewElements);
